@@ -42,7 +42,122 @@
 	</head>
 	
 	<style type="text/css">
-		
+        *{
+        font-family: "urw_gothic_lbook", sans-serif;
+        }
+
+            @font-face {
+    font-family: 'urw_gothic_lbook';
+    src: url('font/urw_gothic_l_book-webfont.eot');
+    src: url('font/urw_gothic_l_book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/urw_gothic_l_book-webfont.woff2') format('woff2'),
+         url('font/urw_gothic_l_book-webfont.woff') format('woff'),
+         url('font/urw_gothic_l_book-webfont.ttf') format('truetype'),
+         url('font/urw_gothic_l_book-webfont.svg#urw_gothic_lbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+        }
+        
+        
+		header{
+        background: #083972; /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA4Mzk3MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwYTMwNWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top,  #083972 0%, #0a305d 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#083972), color-stop(100%,#0a305d)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #083972 0%,#0a305d 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #083972 0%,#0a305d 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #083972 0%,#0a305d 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #083972 0%,#0a305d 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#083972', endColorstr='#0a305d',GradientType=0 ); /* IE6-8 */
+        width: 100%;
+        height: 105px;
+        position:absolute;
+        top:0;
+        z-index: 999;
+        opacity: 0.9;
+        filter: alpha(opacity=90); /* For IE8 and earlier */
+        text-align: center;
+        }
+        
+        header .conteneur{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 100%;
+        }
+        
+        header #logo{
+        width: 130px;
+        height: 82px;
+        left:0;
+        margin-top: 11px;
+        }
+        
+        .menu{
+        top:-48px;
+        padding-left:150px;
+        position: relative;
+        list-style: none;
+        }
+        
+        .menu li{
+        float: left;
+        display: block;
+        color: #fff;
+        }
+        
+        .menu>li.showhide{
+            display: none;
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            color:#fff;
+        }
+        .menu>li.showhide span.titre{
+        margin:15px 0 0 25px;
+        float: left;
+        }
+        .menu>li.showhide span.icon{
+        margin: 17px 20px;
+        float: right;
+        }
+        .menu>li.showhide .icon em{
+        margin-bottom: 3px;
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        }
+        .menu>li>a{
+        padding: 20px 24px;
+        font-size: 14px;
+        color:#fff;
+        text-decoration: none;
+        display: inline-block;
+        }
+        .menu a{
+        o-transition: all .3s linear;
+        webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        transition: all .3s linear;
+        outline: 0;
+        z-index: 10;
+        }
+        a:-webkit-any-link{
+        color: webkit link;
+        text-decoration: underline;
+        cursor: auto;
+        }
+        .menu .indicateur{
+        position: relative;
+        left: 5px;
+        top: 0;
+        font-size: 14px;
+        float: right;
+        }
+        
+        
 	</style>
 
 <body>
@@ -70,7 +185,28 @@
 		<ul id="slide-list"></ul>
 			
 		</div>
-	</div>
+	   </div>
+    
+    <!-- HEADER -->
+    <header>
+        <div class="conteneur">
+            <div id="logo"><a href="#"><img src="./img/logo.png" alt="ACODI"></a></div>
+            <nav>
+            <ul class="menu">
+                <li class="showhide"><span class="titre">Menu</span><span class="icon"><em></em><em></em><em></em></span></li>
+                <li class="active"><a href="#">Accueil</a></li>
+                <li><a href="#">Solutions <span class="indicator">+</span></a></li>
+                <li><a href="#">Matériaux <span class="indicator">+</span></a></li>
+                <li><a href="#">Réalisations</a></li>
+                <li><a href="#">Documentations</a></li>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Société</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
 
+    <aside></aside>
+    </header>
 </body>
 </html>
