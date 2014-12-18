@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>ACODI</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+	<script type="text/javascript" src="theme/supersized.shutter.min.js"></script> 
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slide_interval          :   6000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	1000,		// Speed of transition
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+														{image : 'uploads/lesFuseaux.jpg', title : 'Les Fuseaux', thumb : 'uploads/lesFuseaux.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+														{image : 'uploads/theatreFrejus.jpg', title : 'Le Théâtre de Fréjus', thumb : 'uploads/theatreFrejus.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'}
+												]
+					
+				});
+		    });
+		    
+		</script>
+		
+	</head>
+	
+	<style type="text/css">
+		
+	</style>
+
+<body>
+
+
+	<!-- SLIDE -->
+	
+		<!--Time Bar-->
+		<div id="progress-back" class="load-item">
+			<div id="progress-bar"></div>
+		</div>
+	
+		<!--Control Bar-->
+		<div id="controls-wrapper" class="load-item">
+			<div id="controls">
+				<!--Slide counter-->
+				<div id="slidecounter">
+					<span class="slidenumber"></span> / <span class="totalslides"></span>
+				</div>
+			
+		<!--Slide captions displayed here-->
+		<div id="slidecaption"></div>
+		
+		<!--Navigation-->
+		<ul id="slide-list"></ul>
+			
+		</div>
+	</div>
+
+</body>
+</html>
