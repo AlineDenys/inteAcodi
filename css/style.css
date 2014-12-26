@@ -377,3 +377,17 @@ footer .conteneur #realisations p{
     font-weight: bold;
     color: #000;
 }
+
+footer .conteneur #exemples figure {
+    float: left;
+    display: inline-block;
+    width: 90px;
+    padding-left:2px;
+    padding-right:2px;
+    padding-bottom:10px;
+}
+footer .conteneur #exemples figure img{
+    border-radius: 0 8px 8px 8px;
+    height: 62px;
+    width: 80px;
+}
