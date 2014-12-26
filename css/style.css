@@ -85,7 +85,7 @@ header #fren #inactif{
     color:#4b8daf;
 }
 header form{
-    margin-top:30px;
+    margin-top:25px;
 }
 header form #search{
     width: 160px;
@@ -232,9 +232,53 @@ footer{
 footer .conteneur{
     background-color: #fff; 
     width: 100%;
-    height: 200px;
-margin-top:8px;
+    height: 190px;
+    margin-top:8px;
     z-index: 2;
     text-align: center;
+    -webkit-columns: 5;
+    -moz-columns: 5;
+	columns: 5;
+    padding-left:5%;
+    padding-right:5%;
 }
 
+footer .conteneur div{
+border-right:1px solid grey;
+    margin-top: 10px;
+    text-align: left;
+}
+
+h2{
+    font-size: 18px;
+    text-align: left;
+    font-family: 'urw_gothic_lbook', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+footer .conteneur div #solutions {
+    list-style-type: none;
+}
+
+footer .conteneur div #solutions li{
+    border-top:1px solid grey;
+    margin: 0 30px 0 0;
+    padding: 8px 0 8px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color:#032a57;
+    background: url("../img/flechesolutions.png") no-repeat right center;
+}
+footer .conteneur div #solutions li:hover{
+background-position: 90% 50%;
+}
+
+footer .conteneur div #solutions li p{
+    font-weight: normal;
+    color:grey;
+}
+footer .conteneur div #solutions a{
+text-decoration: none;
+
+}
