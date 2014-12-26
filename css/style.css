@@ -242,10 +242,10 @@ footer .conteneur{
 }
 
 footer .conteneur div{
-border-right:1px solid grey;
+    border-right:1px solid grey;
     text-align: left;
     width: 20%;
-    display: inline-block;
+    display: table-cell;
     padding-left:25px;
     height: 170px;
 }
@@ -289,11 +289,10 @@ position: relative;
 
 }
 footer .conteneur #materiauxtextures figure{
-width: 126px;
-    
+    width: 126px;
 }
 footer .conteneur #materiauxtextures figure img{
- border-radius: 0 8px 8px 8px;
+    border-radius: 0 8px 8px 8px;
 }
 figure figcaption{
     display: none;
@@ -306,16 +305,19 @@ figure figcaption{
     left:auto;
 }
 figure:hover figcaption{
-display: block;
+    display: block;
 }
 footer .conteneur #materiauxtextures #materiaux{
     border: 0;
+    display: inline-block;
     padding-left: 0px;
     margin: 0;
+    height: 130px;
 }
 footer .conteneur #materiauxtextures #textures{
     border: 0;
-    width: 135px;
+    width: 150px;
+    display: inline-block;
     float: right;
     height: 130px;
     padding-right: 15px;
@@ -325,11 +327,53 @@ footer .conteneur #materiauxtextures  #textures figure {
     float: right;
     display: inline-block;
     width: 65px;
-    padding-left:1px;
-    padding-right:1px;
+    padding-left:2px;
+    padding-right:2px;
 }
 footer .conteneur #materiauxtextures  #textures figure img{
     border-radius: 0 8px 8px 8px;
     height: 62px;
     width: 65px;
+}
+
+footer .conteneur #realisations ul {
+    list-style-type: none;
+     display: inline-block;
+    width: 130px;
+}
+footer .conteneur #realisations ul span{
+    font-size: 12px;
+    font-weight: bold;
+    color:#032a57;
+}
+footer .conteneur #realisations li{
+    font-size: 11px;
+    background: url("../img/flechesolutions.png") no-repeat right center;
+    background-size:5px 10px;
+
+    padding-top:7px;
+    padding-bottom:7px;
+    border-bottom:1px solid grey;
+}
+footer .conteneur #realisations li:hover{
+background-position: 95% 50%;
+}
+
+footer .conteneur #realisations a{
+    text-decoration: none;
+    color:grey;
+}
+footer .conteneur #realisations #types{
+    float: right;
+    padding-right: 20px;
+}
+footer .conteneur #realisations p{
+    font-size: 11px;
+    background: url("../img/plus.png") no-repeat left center;
+    background-size:10px 10px;
+    padding-left: 20px;
+    padding-top:7px;
+    margin-bottom:10px;
+    font-weight: bold;
+    color: #000;
 }
