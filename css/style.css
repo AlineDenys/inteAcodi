@@ -50,6 +50,58 @@ header #logo{
         left:0;
         margin-top: 11px;
 }
+
+header #right{
+    width: 200px;
+    height: 103px;
+    float: right;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top:20px;
+    text-align: left;
+}
+header #right a{
+    text-decoration: none;
+    color:#fff;
+}
+
+header #espaceclient{
+    background: url("../img/lock.png") no-repeat top left;
+    padding-left:15px;
+}
+
+header #espaceclient:hover{
+    background: url("../img/lockactif.png") no-repeat top left;
+    color:#4b8daf;
+}
+header #fren {
+    float: right;
+    color:#4b8daf;
+}
+header #fren #inactif:hover{
+    color:#fff;
+}
+header #fren #inactif{
+    color:#4b8daf;
+}
+header form{
+    margin-top:30px;
+}
+header form #search{
+    width: 160px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+header form #ok{
+    width: 25px;
+    background: #000 url('../img/search.png') no-repeat center center;
+    height: 27px;
+    border:0px;
+    color: #fff;
+    cursor: pointer;
+}
+
         
 .menu{
         top:-48px;
@@ -173,6 +225,15 @@ footer{
     height: 230px;
     position:absolute;
     bottom:0;
+    z-index: 2;
+    text-align: center;
+}
+
+footer .conteneur{
+    background-color: #fff; 
+    width: 100%;
+    height: 200px;
+margin-top:8px;
     z-index: 2;
     text-align: center;
 }
