@@ -231,22 +231,23 @@ footer{
 
 footer .conteneur{
     background-color: #fff; 
-    width: 100%;
-    height: 190px;
+    width: 90%;
+    height: 185px;
     margin-top:8px;
     z-index: 2;
     text-align: center;
-    -webkit-columns: 5;
-    -moz-columns: 5;
-	columns: 5;
+
+    padding-top: 10px;
     padding-left:5%;
     padding-right:5%;
 }
 
 footer .conteneur div{
 border-right:1px solid grey;
-    margin-top: 10px;
     text-align: left;
+    width: 20%;
+    display: inline-block;
+    padding-left:25px;
 }
 
 h2{
@@ -255,6 +256,7 @@ h2{
     font-family: 'urw_gothic_lbook', sans-serif;
     font-weight: bold;
     padding-bottom: 10px;
+
 }
 
 footer .conteneur div #solutions {
@@ -281,4 +283,19 @@ footer .conteneur div #solutions li p{
 footer .conteneur div #solutions a{
 text-decoration: none;
 
+}
+footer .conteneur #materiaux{
+position: relative;
+}
+
+footer .conteneur #materiaux figure img{
+ border-radius: 0 8px 8px 8px;
+}
+footer .conteneur #materiaux figure figcaption{
+    background-color: #000;
+ position: absolute; 
+  color: white; 
+  padding: 5px; 
+  margin-top:-37px;
+    font-size: 12px;
 }
