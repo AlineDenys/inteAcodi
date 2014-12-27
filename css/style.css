@@ -115,7 +115,8 @@ header form #ok{
         display: block;
         color: #fff;
 }
-.menu li a:hover, .menu .actif{
+
+.menu li:hover, .menu .actif{
 background-color: #000;
 }
         
@@ -161,14 +162,37 @@ a:-webkit-any-link{
         text-decoration: underline;
         cursor: auto;
 }
-.menu .indicateur{
-        position: relative;
-        left: 5px;
-        top: 0;
-        font-size: 14px;
-        float: right;
+.menu .indicateurSousmenu{
+    background: url("../img/indicateurssmenu.png") no-repeat right center;
 }
 
+.menu > li > div{
+background-color: #000;
+    width: 100%;
+    height:200px;
+     position: absolute;
+    width: 100%;
+        left: 0;
+    z-index: 9999;
+        -webkit-transition: all .3s ease .15s;
+    -moz-transition: all .3s ease .15s;
+    -o-transition: all .3s ease .15s;
+    -ms-transition: all .3s ease .15s;
+    transition: all .3s ease .15s;
+        opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+        border-radius: 0 25px 25px 25px;
+}
+
+.menu > li:hover > div {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+.menu > li:hover + .menu .actif{
+background-color: grey;
+}
 
 #centre{
     height: 300px;
@@ -353,6 +377,11 @@ footer .conteneur #realisations ul span{
     font-weight: bold;
     color:#032a57;
 }
+footer .conteneur #realisations li:last-child, footer .conteneur #realisations li:first-child{
+border:0;
+    background: none;
+    padding: 0;
+}
 footer .conteneur #realisations li{
     font-size: 11px;
     background: url("../img/flechesolutions.png") no-repeat right center;
@@ -435,7 +464,7 @@ footer .conteneur #actualite a{
     text-decoration: none;
 }
 
-footer #right{
+footer #propulse{
     float: right;
     margin-right: 5%;
 }
@@ -444,7 +473,7 @@ footer #left{
     margin-left: 5%;
 }
 
-footer #left, footer #right{
+footer #left, footer #propulse{
     color:grey;
     font-size: 11px;
     vertical-align: middle;
@@ -452,9 +481,9 @@ footer #left, footer #right{
     line-height: 27px;
     
 }
-footer #left a, footer #right a{
+footer #left a, footer #propulse a{
     text-decoration: none;
     color:grey;
     
 }
-footer #left a:hover, footer #right a:hover{color: #fff;}
+footer #left a:hover, footer #propulse a:hover{color: #fff;}

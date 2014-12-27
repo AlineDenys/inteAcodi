@@ -46,11 +46,6 @@
 
 <body>
 
-
-	
-
-	
-    
     <!-- HEADER -->
     <header>
 
@@ -71,8 +66,10 @@
             <ul class="menu">
                 <li class="showhide"><span class="titre">Menu</span><span class="icon"><em></em><em></em><em></em></span></li>
                 <li class="actif"><a href="#">Accueil</a></li>
-                <li><a href="#">Solutions <span class="indicator">+</span></a></li>
-                <li><a href="#">Matériaux <span class="indicator">+</span></a></li>
+                <li class="indicateurSousmenu"><a href="#">Solutions</a>
+                    <div class="sousmenu"></div>
+                </li>
+                <li  class="indicateurSousmenu"><a href="#">Matériaux</a></li>
                 <li><a href="#">Réalisations</a></li>
                 <li><a href="#">Documentations</a></li>
                 <li><a href="#">Actualités</a></li>
@@ -103,12 +100,12 @@
     <!-- FOOTER -->
     <footer>
         <div class="conteneur">
-            <div id="solutions"><ul><h2>nos solutions</h2>
-                <a href=""><li><h3>ALLURE - Accroche</h3>                <p>hjgjhg;jhgjhg;j</p></li></a>
+            <div id="solutions"><h2>nos solutions</h2><ul>
+                <li><a href=""><h3>ALLURE - Accroche</h3>                <p>hjgjhg;jhgjhg;j</p></a></li>
                 
-                <a href=""><li><h3>AMBITION - Fixation frontale</h3><p>hjgjhg;jhgjhg;j</p></li></a>
+                <li><a href=""><h3>AMBITION - Fixation frontale</h3><p>hjgjhg;jhgjhg;j</p></a></li>
                 
-                <a href=""><li><h3>HORIZON - Emboîté</h3>                <p>hjgjhg;jhgjhg;j</p></li></a>
+                <li><a href=""><h3>HORIZON - Emboîté</h3>                <p>hjgjhg;jhgjhg;j</p></a></li>
                 </ul></div>
             
             <div id="materiauxtextures"><h2>nos matériaux et textures</h2>
@@ -148,18 +145,20 @@
             </div>
             <div id="realisations"><h2>nos réalisations</h2>
                 
-                <ul id="usages"><span>USAGES</span>
-                    <a href="#"><li>Bardage rapporté</li></a>
-                   <a href="#"><li>Vêture</li></a>
-                    <a href="#"><li>5ème façade</li></a>
-                    <a href="#"><p>Tous les usages</p></a>
+                <ul id="usages">
+                    <li><h3>USAGES</h3></li>
+                    <li><a href="#">Bardage rapporté</a></li>
+                   <li><a href="#">Vêture</a></li>
+                    <li><a href="#">5ème façade</a></li>
+                    <li><a href="#"><p>Tous les usages</p></a></li>
                 </ul>
-                
-                <ul id="types"><span>TYPES</span>
-                <a href="#"><li>Centres commerciaux</li></a>
-                   <a href="#"><li>Tertiaire</li></a>
-                    <a href="#"><li>Logements</li></a>
-                    <a href="#"><p>Tous les types</p></a>
+
+                <ul id="types">
+                    <li><h3>TYPES</h3></li>
+                <li><a href="#">Centres commerciaux</a></li>
+                <li><a href="#">Tertiaire</a></li>
+                <li><a href="#">Logements</a></li>
+                <li><a href="#"><p>Tous les types</p></a></li>
                      </ul>
                
                </div>
@@ -202,7 +201,7 @@
         </div>
         
         <p id="left">&copy; 2014 | <a href="#">Accueil</a> | <a href="#">A propos</a> | <a href="#">Contact</a> | <a href="#">Mentions légales</a></p>
-        <p id="right"><a href="">Propulsé par <strong>GDA</strong></a></p>
+        <p id="propulse"><a href="">Propulsé par <strong>GDA</strong></a></p>
     </footer>
     
 
