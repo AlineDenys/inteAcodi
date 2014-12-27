@@ -115,7 +115,7 @@ header form #ok{
         display: block;
         color: #fff;
 }
-.menu li a:hover{
+.menu li a:hover, .menu .actif{
 background-color: #000;
 }
         
@@ -246,7 +246,7 @@ footer .conteneur div{
     text-align: left;
     width: 20%;
     display: table-cell;
-    padding-left:25px;
+    padding-left:15px;
     height: 170px;
 }
 
@@ -258,29 +258,36 @@ h2{
     padding-bottom: 10px;
 
 }
-
-footer .conteneur div #solutions {
-    list-style-type: none;
+h3{
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    color:#032a57;
+    font-family: 'urw_gothic_lbook', sans-serif;
 }
 
-footer .conteneur div #solutions li{
+footer .conteneur #solutions {        padding-left:0px;}
+footer .conteneur #solutions ul {
+    list-style-type: none;
+
+}
+
+footer .conteneur #solutions ul li{
     border-top:1px solid grey;
     margin: 0 30px 0 0;
     padding: 8px 0 8px 0;
     font-size: 12px;
-    font-weight: bold;
-    color:#032a57;
     background: url("../img/flechesolutions.png") no-repeat right center;
 }
-footer .conteneur div #solutions li:hover{
-background-position: 90% 50%;
+footer .conteneur #solutions ul li:hover{
+    background-position: 90% 50%;
 }
 
-footer .conteneur div #solutions li p{
+footer .conteneur #solutions ul li p{
     font-weight: normal;
     color:grey;
 }
-footer .conteneur div #solutions a, #materiauxtextures #textures a{
+footer .conteneur #solutions a, #materiauxtextures #textures a{
 text-decoration: none;
 
 }
@@ -356,7 +363,8 @@ footer .conteneur #realisations li{
     border-bottom:1px solid grey;
 }
 footer .conteneur #realisations li:hover{
-background-position: 95% 50%;
+    background-position: 95% 50%;
+    color: #000;
 }
 
 footer .conteneur #realisations a{
@@ -367,15 +375,17 @@ footer .conteneur #realisations #types{
     float: right;
     padding-right: 20px;
 }
-footer .conteneur #realisations p{
+footer .conteneur #realisations p,footer .conteneur #actualite #lasuite{
     font-size: 11px;
     background: url("../img/plus.png") no-repeat left center;
+    height: 20px;
     background-size:10px 10px;
     padding-left: 20px;
     padding-top:7px;
     margin-bottom:10px;
     font-weight: bold;
     color: #000;
+    text-decoration: none;
 }
 
 footer .conteneur #exemples figure {
@@ -384,10 +394,56 @@ footer .conteneur #exemples figure {
     width: 90px;
     padding-left:2px;
     padding-right:2px;
-    padding-bottom:10px;
+
 }
+footer .conteneur #exemples .haut{
+        padding-bottom:10px;
+}
+
 footer .conteneur #exemples figure img{
     border-radius: 0 8px 8px 8px;
     height: 62px;
     width: 80px;
 }
+footer .conteneur #actualite{
+    border: 0;
+}
+footer .conteneur #actualite #resume{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    text-align: justify;
+    color: grey;
+    line-height: 20px;
+}
+.conteneur #actualite #lasuite{
+float: right;
+}
+
+footer .conteneur #actualite a{
+    text-decoration: none;
+}
+
+footer #right{
+    float: right;
+    margin-right: 5%;
+}
+footer #left{
+    float: left;
+    margin-left: 5%;
+}
+
+footer #left, footer #right{
+    color:grey;
+    font-size: 11px;
+    vertical-align: middle;
+    height: 27px;
+    line-height: 27px;
+    
+}
+footer #left a, footer #right a{
+    text-decoration: none;
+    color:grey;
+    
+}
+footer #left a:hover, footer #right a:hover{color: #fff;}
