@@ -375,7 +375,7 @@ footer .conteneur #realisations #types{
     float: right;
     padding-right: 20px;
 }
-footer .conteneur #realisations p,footer .conteneur #actualite #lasuite{
+footer .conteneur #realisations p{
     font-size: 11px;
     background: url("../img/plus.png") no-repeat left center;
     height: 20px;
@@ -418,6 +418,17 @@ footer .conteneur #actualite #resume{
 }
 .conteneur #actualite #lasuite{
 float: right;
+    font-size: 11px;
+    background: url("../img/plus.png") no-repeat left center;
+    height: 20px;
+    background-size:10px 10px;
+    padding-left: 20px;
+    padding-top:7px;
+    margin-bottom:0px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
 }
 
 footer .conteneur #actualite a{
