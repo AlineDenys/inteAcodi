@@ -116,10 +116,14 @@ header form #ok{
         color: #fff;
 }
 
-.menu li:hover, .menu .actif{
+.menu li:hover{
 background-color: #000;
 }
-        
+.menu .actif{
+background-color: #000;
+}
+
+    
 .menu>li.showhide{
             display: none;
             width: 100%;
@@ -166,23 +170,22 @@ a:-webkit-any-link{
     background: url("../img/indicateurssmenu.png") no-repeat right center;
 }
 
-.menu > li > div{
-background-color: #000;
+.menu li .sousmenu{
+    background-color: #fff;
+    border-top:10px solid black;
     width: 100%;
-    height:200px;
-     position: absolute;
-    width: 100%;
-        left: 0;
+    position: absolute;
+    left: 0;
     z-index: 9999;
-        -webkit-transition: all .3s ease .15s;
+    -webkit-transition: all .3s ease .15s;
     -moz-transition: all .3s ease .15s;
     -o-transition: all .3s ease .15s;
     -ms-transition: all .3s ease .15s;
     transition: all .3s ease .15s;
-        opacity: 0;
+    opacity: 0;
     visibility: hidden;
     overflow: hidden;
-        border-radius: 0 25px 25px 25px;
+    border-radius: 0 25px 25px 25px;
 }
 
 .menu > li:hover > div {
@@ -190,10 +193,43 @@ background-color: #000;
     visibility: visible;
     overflow: visible;
 }
-.menu > li:hover + .menu .actif{
-background-color: grey;
+
+
+.sousmenu .element{
+    text-align: left;
+    width: 33.33%;
+    display:inline;
+    float: left;
+    position: relative;
+}
+.sousmenu .element figure{
+    padding: 35px;
+    float: left;
+}
+.sousmenu .element span{
+    font-size: 12px;
+    color:grey;
+    text-align: justify;
 }
 
+.sousmenu .element p{
+    margin-top:5px;
+    background-color: #032a57;
+    min-height: 80px;
+}
+.sousmenu .element p a{
+    font-size: 12px;
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    padding-top: 5px;
+
+    padding-left:176px;
+}
+
+.sousmenu .element p a:hover{
+    background-color: #000;
+}
 #centre{
     height: 300px;
     width: 100%;
@@ -289,6 +325,15 @@ h3{
     color:#032a57;
     font-family: 'urw_gothic_lbook', sans-serif;
 }
+h4{
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color:#032a57;
+    font-family: 'urw_gothic_lbook', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
 
 footer .conteneur #solutions {        padding-left:0px;}
 footer .conteneur #solutions ul {
@@ -372,21 +417,18 @@ footer .conteneur #realisations ul {
      display: inline-block;
     width: 130px;
 }
-footer .conteneur #realisations ul span{
-    font-size: 12px;
-    font-weight: bold;
-    color:#032a57;
-}
+
 footer .conteneur #realisations li:last-child, footer .conteneur #realisations li:first-child{
 border:0;
     background: none;
     padding: 0;
 }
+
 footer .conteneur #realisations li{
     font-size: 11px;
+
     background: url("../img/flechesolutions.png") no-repeat right center;
     background-size:5px 10px;
-
     padding-top:7px;
     padding-bottom:7px;
     border-bottom:1px solid grey;
@@ -399,6 +441,7 @@ footer .conteneur #realisations li:hover{
 footer .conteneur #realisations a{
     text-decoration: none;
     color:grey;
+    display: block;
 }
 footer .conteneur #realisations #types{
     float: right;
@@ -446,7 +489,7 @@ footer .conteneur #actualite #resume{
     line-height: 20px;
 }
 .conteneur #actualite #lasuite{
-float: right;
+    float: right;
     font-size: 11px;
     background: url("../img/plus.png") no-repeat left center;
     height: 20px;
@@ -457,7 +500,6 @@ float: right;
     font-weight: bold;
     color: #000;
     text-decoration: none;
-}
 }
 
 footer .conteneur #actualite a{
