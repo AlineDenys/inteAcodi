@@ -101,7 +101,6 @@ header form #ok{
     color: #fff;
     cursor: pointer;
 }
-
         
 .menu{
         top:-48px;
@@ -206,10 +205,11 @@ a:-webkit-any-link{
     padding: 35px;
     float: left;
 }
-.sousmenu .element span{
+.sousmenu .element div{
     font-size: 12px;
     color:grey;
     text-align: justify;
+        height: 40px;
 }
 
 .sousmenu .element p{
@@ -529,3 +529,91 @@ footer #left a, footer #propulse a{
     
 }
 footer #left a:hover, footer #propulse a:hover{color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1660px)
+{
+    footer .conteneur #exemples figure {
+    width: 80px;}
+    footer .conteneur #realisations ul {
+    width: 110px;}
+    footer .conteneur #materiauxtextures #materiaux img {
+    width: 100px;  height: 40px;}
+    footer .conteneur #actualite #resume{
+    padding-bottom: 0px;}
+    .sousmenu .element div{
+    height: 50px;
+    }
+}
+
+@media all and (max-width: 1490px)
+{
+    footer .conteneur #exemples figure {
+    width: 90px;}
+    footer .conteneur #realisations ul {
+    width: 130px;}
+    footer .conteneur #actualite{
+   display: none;}
+    footer .conteneur #exemples{border: 0;}
+    footer .conteneur #materiauxtextures #materiaux img {
+    width: 130px;}
+}
+@media all and (max-width: 1430px)
+{
+    .menu>li>a{
+    padding: 20px 16px;}
+    .sousmenu .element div{
+    display: none;
+    }
+    .sousmenu .element figure{
+    padding: 15px;}
+    h4{
+    text-indent: 35px;
+    }
+    #accroche, #slide-list{
+    display: none;
+    }
+}
+@media all and (max-width: 1330px)
+{
+  footer .conteneur #exemples figure {
+    width: 80px;
+  }
+  footer .conteneur #realisations ul {
+    width: 110px;}
+    footer .conteneur #materiauxtextures #materiaux img {
+    width: 100px;
+    height: 40px;}
+
+}
+@media all and (max-width: 1290px)
+{
+   .menu>li>a{
+    padding: 20px 8px;}
+    .menu .indicateurSousmenu{
+    background: url("../img/indicateurssmenu.png") no-repeat bottom center;
+    }
+    h4{
+    font-size: 12px;}
+}
