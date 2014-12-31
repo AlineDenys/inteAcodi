@@ -53,7 +53,7 @@ header #logo{
 
 header #right{
     width: 200px;
-    height: 103px;
+
     float: right;
     font-size: 10px;
     font-weight: bold;
@@ -364,9 +364,6 @@ footer .conteneur #materiauxtextures{
 position: relative;
 
 }
-footer .conteneur #materiauxtextures figure{
-    width: 126px;
-}
 footer .conteneur #materiauxtextures figure img{
     border-radius: 0 8px 8px 8px;
 }
@@ -388,7 +385,11 @@ footer .conteneur #materiauxtextures #materiaux{
     display: inline-block;
     padding-left: 0px;
     margin: 0;
-    height: 130px;
+    height: 100px;
+}
+footer .conteneur #materiauxtextures  #materiaux figure img{
+    width: 200%;
+    height: 40px;
 }
 footer .conteneur #materiauxtextures #textures{
     border: 0;
@@ -402,20 +403,20 @@ footer .conteneur #materiauxtextures #textures{
 footer .conteneur #materiauxtextures  #textures figure {
     float: right;
     display: inline-block;
-    width: 65px;
+    width: 40%;
     padding-left:2px;
     padding-right:2px;
 }
 footer .conteneur #materiauxtextures  #textures figure img{
     border-radius: 0 8px 8px 8px;
     height: 62px;
-    width: 65px;
+    width: 100%;
 }
 
 footer .conteneur #realisations ul {
     list-style-type: none;
      display: inline-block;
-    width: 130px;
+    width: 45%;
 }
 
 footer .conteneur #realisations li:last-child, footer .conteneur #realisations li:first-child{
@@ -463,7 +464,7 @@ footer .conteneur #realisations p{
 footer .conteneur #exemples figure {
     float: left;
     display: inline-block;
-    width: 90px;
+    width: 30%;
     padding-left:2px;
     padding-right:2px;
 
@@ -475,14 +476,13 @@ footer .conteneur #exemples .haut{
 footer .conteneur #exemples figure img{
     border-radius: 0 8px 8px 8px;
     height: 62px;
-    width: 80px;
+    width: 100%;
 }
 footer .conteneur #actualite{
     border: 0;
 }
 footer .conteneur #actualite #resume{
     padding-top: 10px;
-    padding-bottom: 10px;
     font-size: 12px;
     text-align: justify;
     color: grey;
@@ -554,14 +554,6 @@ footer #left a:hover, footer #propulse a:hover{color: #fff;}
 
 @media all and (max-width: 1660px)
 {
-    footer .conteneur #exemples figure {
-    width: 80px;}
-    footer .conteneur #realisations ul {
-    width: 110px;}
-    footer .conteneur #materiauxtextures #materiaux img {
-    width: 100px;  height: 40px;}
-    footer .conteneur #actualite #resume{
-    padding-bottom: 0px;}
     .sousmenu .element div{
     height: 50px;
     }
@@ -569,15 +561,11 @@ footer #left a:hover, footer #propulse a:hover{color: #fff;}
 
 @media all and (max-width: 1490px)
 {
-    footer .conteneur #exemples figure {
-    width: 90px;}
-    footer .conteneur #realisations ul {
-    width: 130px;}
+    /** je fais disparaitre le block actualité **/
     footer .conteneur #actualite{
    display: none;}
     footer .conteneur #exemples{border: 0;}
-    footer .conteneur #materiauxtextures #materiaux img {
-    width: 130px;}
+   
 }
 @media all and (max-width: 1430px)
 {
@@ -587,26 +575,16 @@ footer #left a:hover, footer #propulse a:hover{color: #fff;}
     display: none;
     }
     .sousmenu .element figure{
-    padding: 15px;}
+    padding-top: 15px;
+    padding-bottom: 15px;}
     h4{
-    text-indent: 35px;
+    padding-left: 35px;
     }
     #accroche, #slide-list{
     display: none;
     }
 }
-@media all and (max-width: 1330px)
-{
-  footer .conteneur #exemples figure {
-    width: 80px;
-  }
-  footer .conteneur #realisations ul {
-    width: 110px;}
-    footer .conteneur #materiauxtextures #materiaux img {
-    width: 100px;
-    height: 40px;}
 
-}
 @media all and (max-width: 1290px)
 {
    .menu>li>a{
@@ -639,15 +617,43 @@ bottom:-230px;
      bottom:0px;
      visibility: visible;
     }
-    footer .conteneur #exemples figure { padding: 0;}
-    footer .conteneur #exemples figure img{
-    width: 60px;
-    padding: 0;}
-    footer .conteneur #realisations ul {
-    width: 90px;}
-  }
+   
     h2{
     font-size: 14px;}
-    footer .conteneur #materiauxtextures #materiaux img {
-    width: 80px;}
+  
+    h4{
+    height: 20px;
+    }
+    #accroche{display: block;}
+    #centre{bottom: 0;}
+}
+
+@media all and (max-width: 1150px)
+{
+    header{
+    height: 172px;
+    }
+    .menu{
+    padding-left:0;
+    top:20px;
+    }
+    #progress-bar{
+    margin-top:67px;
+    }
+    .menu>li>a{
+    padding: 20px 24px;
+    font-size: 14px;}
+    .menu .indicateurSousmenu{
+    background: url("../img/indicateurssmenu.png") no-repeat right center;}
+    #solutions{display: none;}
+   
+}
+
+@media all and (max-width: 1040px)
+{  
+    .menu>li>a{
+    padding: 20px 15px;}
+    .menu .indicateurSousmenu{
+    background: url("../img/indicateurssmenu.png") no-repeat bottom center;
+    }
 }
